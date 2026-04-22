@@ -11,21 +11,21 @@ using namespace std;
 
 class Traveler {
 private:
-    string name;
-    string destination;
-    double budget;
+    std::string name;
+    std::string destination;
+    std::double budget;
 
 public:
 
 //Constructors
 
-    Traveler(string name, string destination, double budget);
+    Traveler(const std::string&name, std::string destination, double budget);
 
-    string getName();
-    string getDestination();
-    double getBudget();
+    std::string getName();
+    std::string getDestination();
+    std::double getBudget();
 
-    void displayInfo();
+    void displayInfo() const;
 };
 
 #endif
