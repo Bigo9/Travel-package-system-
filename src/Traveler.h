@@ -3,10 +3,10 @@
 
 #include <string>
 
-/*
- * Traveler class represents a person planning a trip.
- * It stores their name, destination, and bugget. 
- */
+
+ // Traveler class represents a person planning a trip.
+ // It stores their name, destination, and bugget. 
+
 
 
 class Traveler {
