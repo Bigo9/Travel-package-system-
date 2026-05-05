@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtravel_lib.a CMakeFiles/travel_lib.dir/src/Traveler.cpp.o CMakeFiles/travel_lib.dir/src/Flight.cpp.o CMakeFiles/travel_lib.dir/src/HotelBooking.cpp.o CMakeFiles/travel_lib.dir/src/CarRental.cpp.o CMakeFiles/travel_lib.dir/src/TravelPackage.cpp.o
+/usr/bin/ranlib libtravel_lib.a

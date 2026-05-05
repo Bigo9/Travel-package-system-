@@ -1,0 +1,6 @@
+/workspaces/Travel-package-system-/build/CMakeFiles/travel_lib.dir
+/workspaces/Travel-package-system-/build/CMakeFiles/travel_package.dir
+/workspaces/Travel-package-system-/build/CMakeFiles/tests.dir
+/workspaces/Travel-package-system-/build/CMakeFiles/test.dir
+/workspaces/Travel-package-system-/build/CMakeFiles/edit_cache.dir
+/workspaces/Travel-package-system-/build/CMakeFiles/rebuild_cache.dir
