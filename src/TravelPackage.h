@@ -8,7 +8,7 @@
 #include "HotelBooking.h"
 #include "CarRental.h"
 
-// this is the main class
+// this is the main manager class
 // it holds all the travel info together
 
 class TravelPackage {
@@ -20,7 +20,8 @@ private:
     std::string filename;
 
 public:
-    TravelPackage(Traveler t, std::string file);
+    TravelPackage(std::string name, std::string destination, 
+                  double budget, std::string file);
 
     void addFlight(Flight f);
     void addHotel(HotelBooking h);

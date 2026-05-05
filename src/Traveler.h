@@ -3,11 +3,7 @@
 
 #include <string>
 
-
- // Traveler class represents a person planning a trip.
- // It stores their name, destination, and bugget. 
-
-
+// this class stores traveler info
 
 class Traveler {
 private:
@@ -16,14 +12,11 @@ private:
     double budget;
 
 public:
-
-//Constructors
-
-    Traveler(const std::string&name, std::string destination, double budget);
+    Traveler(std::string name, std::string destination, double budget);
 
     std::string getName() const;
     std::string getDestination() const;
-    double getBudget();
+    double getBudget() const;
 
     void displayInfo() const;
 };

@@ -7,9 +7,19 @@ using namespace std;
 void displayMenu();
 
 int main() {
-    // TODO: get traveler info from user
-    // TODO: create Traveler object
-    // TODO: load existing package from file
+    string name, destination;
+    double budget;
+
+    // get traveler info from user
+    cout << "Welcome to Travel Package System!" << endl;
+    cout << "Enter your name: ";
+    cin >> name;
+    cout << "Enter destination: ";
+    cin >> destination;
+    cout << "Enter your budget: ";
+    cin >> budget;
+
+    TravelPackage package(name, destination, budget, "trip.txt");
 
     int choice;
     bool running = true;
@@ -19,21 +29,19 @@ int main() {
         cin >> choice;
 
         if (choice == 1) {
-            // TODO: get flight info from user
-            // TODO: add flight to package
+            // show traveler info
+            package.displayPackage();
         } else if (choice == 2) {
-            // TODO: get hotel info from user
-            // TODO: add hotel to package
+            // TODO: add flight
         } else if (choice == 3) {
-            // TODO: get car rental info from user
-            // TODO: add car rental to package
+            // TODO: add hotel
         } else if (choice == 4) {
-            // TODO: display full package and total cost
+            // TODO: add car rental
         } else if (choice == 5) {
-            // TODO: save package to file
+            // TODO: save to file
             running = false;
         } else {
-            cout << "Invalid choice. Try again." << endl;
+            cout << "Invalid choice." << endl;
         }
     }
 
@@ -42,10 +50,10 @@ int main() {
 
 void displayMenu() {
     cout << "\n=== Travel Package System ===" << endl;
-    cout << "1. Add Flight" << endl;
-    cout << "2. Add Hotel" << endl;
-    cout << "3. Add Car Rental" << endl;
-    cout << "4. View Package" << endl;
-    cout << "5. Save and Quit" << endl;
+    cout << "1. View Traveler Info" << endl;
+    cout << "2. Add Flight" << endl;
+    cout << "3. Add Hotel" << endl;
+    cout << "4. Add Car Rental" << endl;
+    cout << "5. Quit" << endl;
     cout << "Choice: ";
 }
