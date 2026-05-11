@@ -16,8 +16,12 @@ int main() {
     cin >> name;
     cout << "Enter destination: ";
     cin >> destination;
-    cout << "Enter your budget: ";
-    cin >> budget;
+    cout << "Enter your budget (numbers only, no $ sign): ";
+while (!(cin >> budget)) {
+    cin.clear();
+    cin.ignore(1000, '\n');
+    cout << "Invalid input. Please enter a number only: ";
+}
 
     TravelPackage package(name, destination, budget, "trip.txt");
 
