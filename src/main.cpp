@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "TravelPackage.h"
-
 using namespace std;
 
 void displayMenu();
@@ -10,18 +9,18 @@ int main() {
     string name, destination;
     double budget;
 
-    // get traveler info from user
     cout << "Welcome to Travel Package System!" << endl;
     cout << "Enter your name: ";
     cin >> name;
     cout << "Enter destination: ";
     cin >> destination;
+
     cout << "Enter your budget (numbers only, no $ sign): ";
-while (!(cin >> budget)) {
-    cin.clear();
-    cin.ignore(1000, '\n');
-    cout << "Invalid input. Please enter a number only: ";
-}
+    while (!(cin >> budget)) {
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cout << "Invalid input. Please enter a number only: ";
+    }
 
     TravelPackage package(name, destination, budget, "trip.txt");
 
@@ -30,10 +29,13 @@ while (!(cin >> budget)) {
 
     while (running) {
         displayMenu();
-        cin >> choice;
+        while (!(cin >> choice)) {      
+            cin.clear();               
+            cin.ignore(1000, '\n');     
+            cout << "Invalid choice. Enter a number (1-5): "; 
+        }                              
 
         if (choice == 1) {
-            // show traveler info
             package.displayPackage();
         } else if (choice == 2) {
             // TODO: add flight
@@ -42,7 +44,6 @@ while (!(cin >> budget)) {
         } else if (choice == 4) {
             // TODO: add car rental
         } else if (choice == 5) {
-            // TODO: save to file
             running = false;
         } else {
             cout << "Invalid choice." << endl;
