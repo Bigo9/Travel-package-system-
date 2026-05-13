@@ -8,25 +8,29 @@ HotelBooking::HotelBooking(std::string name, std::string loc, int n, double pric
     this->pricePerNight = price;   }
 
 std::string HotelBooking::getHotelName() const {
-return "";
+    return hotelName;
 }
+
 std::string HotelBooking::getLocation() const {
-    
-          return "";
+    return location;
 }
+
 int HotelBooking::getNights() const {
-              return 0;
+    return nights;
 }
 
-   double HotelBooking::getPricePerNight() const {
+double HotelBooking::getPricePerNight() const {
+    return pricePerNight;
+}
 
-    return 0;
-}    
 double HotelBooking::getTotalCost() const {
-    
-    return 0;
+    return nights * pricePerNight;
 }
-   void HotelBooking::displayInfo() const {
-    
-    std::cout << "[HotelBooking::displayInfo] not yet implemented" << std::endl;
+
+void HotelBooking::displayInfo() const {
+    std::cout << "Hotel: " << hotelName << std::endl;
+    std::cout << "Location: " << location << std::endl;
+    std::cout << "Nights: " << nights << std::endl;
+    std::cout << "Price per night: $" << pricePerNight << std::endl;
+    std::cout << "Total: $" << getTotalCost() << std::endl;
 }
