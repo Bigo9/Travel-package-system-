@@ -26,13 +26,8 @@ void Flight::displayInfo() const {
     std::cout << "To: " << arrival << std::endl;
     std::cout << "Price: $" << price << std::endl;
 }
-}
 
 double Flight::getPrice() const {
     return price;
 }
-}
-void Flight::displayInfo() const {
 
-    std::cout << "[Flight::displayInfo] not yet implemented" << std::endl;
-}

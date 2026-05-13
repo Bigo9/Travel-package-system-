@@ -1,0 +1,27 @@
+Start testing: May 13 22:24 UTC
+----------------------------------------------------------
+1/1 Testing: TravelTests
+1/1 Test: TravelTests
+Command: "/workspaces/Travel-package-system-/build/tests"
+Directory: /workspaces/Travel-package-system-/build
+"TravelTests" start time: May 13 22:24 UTC
+Output:
+----------------------------------------------------------
+Running tests...
+Test 1 - Normal total cost... Flight added!
+Hotel added!
+PASSED
+Test 2 - Empty package cost... PASSED
+Test 3 - Multiple flights... Flight added!
+Flight added!
+PASSED
+All tests passed!
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TravelTests" end time: May 13 22:24 UTC
+"TravelTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 13 22:24 UTC
