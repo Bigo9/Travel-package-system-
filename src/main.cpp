@@ -64,7 +64,22 @@ int main() {
             package.displayPackage();
             preference.displayPreference();
         } else if (choice == 2) {
-            // TODO: add flight
+            } else if (choice == 2) {
+    string airline, departure, arrival;
+    double price;
+
+    cout << "Enter airline name: ";
+    cin >> airline;
+    cout << "Enter departure city: ";
+    cin >> departure;
+    cout << "Enter arrival city: ";
+    cin >> arrival;
+    cout << "Enter flight price: $";
+    cin >> price;
+
+    Flight f(airline, departure, arrival, price);
+    package.addFlight(f);
+}
         } else if (choice == 3) {
             // TODO: add hotel
         } else if (choice == 4) {

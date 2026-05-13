@@ -8,7 +8,10 @@ TravelPackage::TravelPackage(std::string name, std::string destination,
     this->carRental = nullptr;
 } 
        void TravelPackage::addFlight(Flight f) {
-    // TODO: implement later
+    void TravelPackage::addFlight(Flight f) {
+    flights.push_back(f);   
+    std::cout << "Flight added to package!" << std::endl;
+}
     std::cout << "[addFlight] not yet implemented" << std::endl;
 }
 void TravelPackage::addHotel(HotelBooking h) {
@@ -25,6 +28,19 @@ double TravelPackage::getTotalCost() const {
 }
       void TravelPackage::displayPackage() const {
     traveler.displayInfo();
+    void TravelPackage::displayPackage() const {
+    traveler.displayInfo();
+
+    // show all flights
+    if (flights.empty()) {
+        std::cout << "No flights added yet." << std::endl;
+    } else {
+        std::cout << "\n--- Flights ---" << std::endl;
+        for (int i = 0; i < flights.size(); i++) {
+            flights[i].displayInfo();
+        }
+    }
+}
 }
 bool TravelPackage::saveToFile() const {
     // TODO: implement later

@@ -1,31 +1,32 @@
 #include "Flight.h"
 #include <iostream>
 
-
 Flight::Flight(std::string airline, std::string departure, std::string arrival, double price) {
     this->airline = airline;
     this->departure = departure;
     this->arrival = arrival;
-    this->price = price; }
+    this->price = price;
+}
 
 std::string Flight::getAirline() const {
-   
-    return ""; }
+    return airline;        
+}
 
 std::string Flight::getDeparture() const {
-   
-    return ""; }
+    return departure;     
+}
 
 std::string Flight::getArrival() const {
-  
-    return "";
+    return arrival;        
 }
 
 double Flight::getPrice() const {
-
-    return 0;
+    return price;         
 }
-void Flight::displayInfo() const {
 
-    std::cout << "[Flight::displayInfo] not yet implemented" << std::endl;
+void Flight::displayInfo() const {
+    std::cout << "Airline: " << airline << std::endl;
+    std::cout << "From: " << departure << std::endl;
+    std::cout << "To: " << arrival << std::endl;
+    std::cout << "Price: $" << price << std::endl;
 }
