@@ -7,12 +7,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 enable_testing()
 
  add_library(travel_lib
-     src/Traveler.cpp
-     src/Flight.cpp
+    src/Traveler.cpp
+    src/Flight.cpp
     src/HotelBooking.cpp
     src/CarRental.cpp
-     src/TravelPackage.cpp
- )
+    src/TravelPackage.cpp
+    src/TravelPreference.cpp
+    src/ServiceProvider.cpp
+)
 
 add_executable(travel_package src/main.cpp)
 target_link_libraries(travel_package travel_lib)

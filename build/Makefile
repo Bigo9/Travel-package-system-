@@ -237,6 +237,30 @@ src/HotelBooking.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/travel_lib.dir/build.make CMakeFiles/travel_lib.dir/src/HotelBooking.cpp.s
 .PHONY : src/HotelBooking.cpp.s
 
+src/ServiceProvider.o: src/ServiceProvider.cpp.o
+.PHONY : src/ServiceProvider.o
+
+# target to build an object file
+src/ServiceProvider.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/travel_lib.dir/build.make CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.o
+.PHONY : src/ServiceProvider.cpp.o
+
+src/ServiceProvider.i: src/ServiceProvider.cpp.i
+.PHONY : src/ServiceProvider.i
+
+# target to preprocess a source file
+src/ServiceProvider.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/travel_lib.dir/build.make CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.i
+.PHONY : src/ServiceProvider.cpp.i
+
+src/ServiceProvider.s: src/ServiceProvider.cpp.s
+.PHONY : src/ServiceProvider.s
+
+# target to generate assembly for a file
+src/ServiceProvider.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/travel_lib.dir/build.make CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.s
+.PHONY : src/ServiceProvider.cpp.s
+
 src/TravelPackage.o: src/TravelPackage.cpp.o
 .PHONY : src/TravelPackage.o
 
@@ -260,6 +284,30 @@ src/TravelPackage.s: src/TravelPackage.cpp.s
 src/TravelPackage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/travel_lib.dir/build.make CMakeFiles/travel_lib.dir/src/TravelPackage.cpp.s
 .PHONY : src/TravelPackage.cpp.s
+
+src/TravelPreference.o: src/TravelPreference.cpp.o
+.PHONY : src/TravelPreference.o
+
+# target to build an object file
+src/TravelPreference.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/travel_lib.dir/build.make CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.o
+.PHONY : src/TravelPreference.cpp.o
+
+src/TravelPreference.i: src/TravelPreference.cpp.i
+.PHONY : src/TravelPreference.i
+
+# target to preprocess a source file
+src/TravelPreference.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/travel_lib.dir/build.make CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.i
+.PHONY : src/TravelPreference.cpp.i
+
+src/TravelPreference.s: src/TravelPreference.cpp.s
+.PHONY : src/TravelPreference.s
+
+# target to generate assembly for a file
+src/TravelPreference.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/travel_lib.dir/build.make CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.s
+.PHONY : src/TravelPreference.cpp.s
 
 src/Traveler.o: src/Traveler.cpp.o
 .PHONY : src/Traveler.o
@@ -354,9 +402,15 @@ help:
 	@echo "... src/HotelBooking.o"
 	@echo "... src/HotelBooking.i"
 	@echo "... src/HotelBooking.s"
+	@echo "... src/ServiceProvider.o"
+	@echo "... src/ServiceProvider.i"
+	@echo "... src/ServiceProvider.s"
 	@echo "... src/TravelPackage.o"
 	@echo "... src/TravelPackage.i"
 	@echo "... src/TravelPackage.s"
+	@echo "... src/TravelPreference.o"
+	@echo "... src/TravelPreference.i"
+	@echo "... src/TravelPreference.s"
 	@echo "... src/Traveler.o"
 	@echo "... src/Traveler.i"
 	@echo "... src/Traveler.s"

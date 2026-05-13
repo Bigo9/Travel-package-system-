@@ -139,13 +139,43 @@ CMakeFiles/travel_lib.dir/src/TravelPackage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/travel_lib.dir/src/TravelPackage.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Travel-package-system-/src/TravelPackage.cpp -o CMakeFiles/travel_lib.dir/src/TravelPackage.cpp.s
 
+CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.o: CMakeFiles/travel_lib.dir/flags.make
+CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.o: /workspaces/Travel-package-system-/src/TravelPreference.cpp
+CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.o: CMakeFiles/travel_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Travel-package-system-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.o -MF CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.o.d -o CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.o -c /workspaces/Travel-package-system-/src/TravelPreference.cpp
+
+CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Travel-package-system-/src/TravelPreference.cpp > CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.i
+
+CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Travel-package-system-/src/TravelPreference.cpp -o CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.s
+
+CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.o: CMakeFiles/travel_lib.dir/flags.make
+CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.o: /workspaces/Travel-package-system-/src/ServiceProvider.cpp
+CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.o: CMakeFiles/travel_lib.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspaces/Travel-package-system-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.o -MF CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.o.d -o CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.o -c /workspaces/Travel-package-system-/src/ServiceProvider.cpp
+
+CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /workspaces/Travel-package-system-/src/ServiceProvider.cpp > CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.i
+
+CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /workspaces/Travel-package-system-/src/ServiceProvider.cpp -o CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.s
+
 # Object files for target travel_lib
 travel_lib_OBJECTS = \
 "CMakeFiles/travel_lib.dir/src/Traveler.cpp.o" \
 "CMakeFiles/travel_lib.dir/src/Flight.cpp.o" \
 "CMakeFiles/travel_lib.dir/src/HotelBooking.cpp.o" \
 "CMakeFiles/travel_lib.dir/src/CarRental.cpp.o" \
-"CMakeFiles/travel_lib.dir/src/TravelPackage.cpp.o"
+"CMakeFiles/travel_lib.dir/src/TravelPackage.cpp.o" \
+"CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.o" \
+"CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.o"
 
 # External object files for target travel_lib
 travel_lib_EXTERNAL_OBJECTS =
@@ -155,9 +185,11 @@ libtravel_lib.a: CMakeFiles/travel_lib.dir/src/Flight.cpp.o
 libtravel_lib.a: CMakeFiles/travel_lib.dir/src/HotelBooking.cpp.o
 libtravel_lib.a: CMakeFiles/travel_lib.dir/src/CarRental.cpp.o
 libtravel_lib.a: CMakeFiles/travel_lib.dir/src/TravelPackage.cpp.o
+libtravel_lib.a: CMakeFiles/travel_lib.dir/src/TravelPreference.cpp.o
+libtravel_lib.a: CMakeFiles/travel_lib.dir/src/ServiceProvider.cpp.o
 libtravel_lib.a: CMakeFiles/travel_lib.dir/build.make
 libtravel_lib.a: CMakeFiles/travel_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/Travel-package-system-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libtravel_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspaces/Travel-package-system-/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libtravel_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/travel_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/travel_lib.dir/link.txt --verbose=$(VERBOSE)
 
