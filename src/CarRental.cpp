@@ -8,23 +8,29 @@
     this->pricePerDay = price;  }
 
 std::string CarRental::getCarType() const {
-    return "";
+    return carType;
 }
-    std::string CarRental::getCompany() const {
-    // TODO: implement later
-    return "";
-}     
+
+std::string CarRental::getCompany() const {
+    return company;
+}
+
 int CarRental::getDays() const {
-    return 0;
+    return days;
 }
+
 double CarRental::getPricePerDay() const {
-    return 0;
+    return pricePerDay;
 }
+
 double CarRental::getTotalCost() const {
-    // TODO: implement later
-    return 0;
+    return days * pricePerDay;
 }
+
 void CarRental::displayInfo() const {
-   
-    std::cout << "[CarRental::displayInfo] not yet implemented" << std::endl;
+    std::cout << "Car Type: " << carType << std::endl;
+    std::cout << "Company: " << company << std::endl;
+    std::cout << "Days: " << days << std::endl;
+    std::cout << "Price per day: $" << pricePerDay << std::endl;
+    std::cout << "Total: $" << getTotalCost() << std::endl;
 }
