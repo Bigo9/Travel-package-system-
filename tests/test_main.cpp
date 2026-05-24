@@ -38,6 +38,17 @@ void test_total_cost_multiple_flights() {
     std::cout << "PASSED" << std::endl;
 }
 
+// Test 4 - save to file works without crashing
+void test_save_to_file() {
+    std::cout << "Test 4 - Save to file... ";
+    TravelPackage package("Brook", "Rome", 3000, "test_trip.txt");
+    Flight f("Delta", "SF", "Rome", 800);
+    package.addFlight(f);
+    bool result = package.saveToFile();
+    assert(result == true);
+    std::cout << "PASSED" << std::endl;
+}
+
 int main() {
     std::cout << "Running tests..." << std::endl;
     test_total_cost_normal();

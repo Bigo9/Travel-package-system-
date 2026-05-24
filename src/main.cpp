@@ -11,7 +11,6 @@ int main() {
     string name, destination, budgetLevel, tourism;
     double moneyBudget;
     int days, tourChoice;
-
     cout << "Welcome to Travel Package System!" << endl;
     cout << "Enter your name: ";
     cin >> name;
@@ -55,7 +54,6 @@ int main() {
         if (choice == 1) {
             package.displayPackage();
             preference.displayPreference();
-
         } else if (choice == 2) {
             string airline, departure, arrival;
             double price;
@@ -65,12 +63,12 @@ int main() {
             getline(cin, departure);
             cout << "Enter arrival city: ";
             getline(cin, arrival);
-            cout << "Enter flight price: $";
+
+    cout << "Enter flight price: $";
             cin >> price;
             cin.ignore();
             Flight f(airline, departure, arrival, price);
             package.addFlight(f);
-
         } else if (choice == 3) {
             string hotelName, location;
             int nights;
@@ -86,7 +84,6 @@ int main() {
             cin.ignore();
             HotelBooking h(hotelName, location, nights, pricePerNight);
             package.addHotel(h);
-
         } else if (choice == 4) {
             string carType, company;
             int carDays;
@@ -102,8 +99,8 @@ int main() {
             cin.ignore();
             CarRental c(carType, company, carDays, pricePerDay);
             package.addCarRental(c);
-
         } else if (choice == 5) {
+            package.saveToFile();
             cout << "Goodbye!" << endl;
             running = false;
         } else {

@@ -1,0 +1,10 @@
+=== Travel Package ===
+Traveler: Brook
+Destination: brasile
+Budget: $3000
+
+-- Flights --
+
+-- Hotels --
+
+Total Cost: $0
